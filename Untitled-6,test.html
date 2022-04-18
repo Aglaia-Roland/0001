@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .title{
+            display: block;
+            position: fixed;
+            float: left;
+            color: antiquewhite;
+            padding-left: 6%;
+            padding-top: 5%;
+            padding-bottom: 20px;
+            font-weight: 600;
+            font-size:15px;
+            
+        }
+        /*?li:first-child[type="micro soft"]{
+            list-style-image:url('QQ截图20220413185500 kuang.png');}
+        /*???*/ 
+        .main{/*这里是横着的导航*/
+            display: inline-block;
+            margin-left: 20px;
+           
+        }
+        li:first-child[type="micro soft"]{
+            margin-right: 30px;
+            margin-left: 10px;
+        }
+       /* ul.sub{
+            display: none;
+            padding: 4px;
+            
+            
+        
+        ul.title:hover~ul.sub{
+                display:block;
+                position: static;
+               
+            }
+            */
+        img.one{
+            position:absolute;
+            padding-top: 6%;
+            padding-left: 2%;
+            height: 30px;
+            width: auto;
+            
+        }
+        body{background-image: url('QQ图片20220413185402 4.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+           
+
+        }   
+        ul,video{color: white;}
+        input.search{
+            display:block;
+            position: absolute;
+            width: 400px;
+            height: 20px;
+            margin: auto;
+            border: 3px solid rgb(11, 11, 48);
+            border-radius: 10px;
+            margin-top: 15%;
+            margin-left: 25%;
+            background-color:beige;
+            background-image: url('QQ截图20220413185500 kuang.png');
+            background-repeat: no-repeat;
+            background-position: 0px -5px;
+            z-index: 2;
+
+
+            
+        }
+        input:focus{
+            background-color: rgb(238, 252, 255);
+            cursor: grab;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+            background: none;
+
+        }
+        .select{
+            display:none;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 80px;
+            background-color: white;
+            color: black;
+        }
+        ul.title:hover~ul.select{
+            display: block;
+        }
+
+        input[type=button]{
+            border: none;
+            text-decoration: none;
+            margin-top: 16.5%;
+        margin-left: 19%;
+            z-index: 1;
+                    
+    }
+        
+       
+        
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <img src="QQ图片20220309001525 3.gif" class="one">
+
+    <ul class="title">
+        <li class="main" type="micro soft" >micro soft</li>
+        <li class="main">picture</li>
+        <li class="main">video</li>
+        <!--  <a herf="http://www.hdu.edu.cn/" class="video"></a>   -->
+        <li type="more" class="dropdown">more</li>
+    </ul>
+   
+    <form name="input">
+        <input type="text" value="       输入" class="search">
+        </form>
+    
+        <ul class="select">
+            <li>map</li>
+            <li>abab</li>
+            <li>morere</li>
+        </ul>
+
+        <input type="button" value="搜索" class="buttom">
+       
+
+
+
+
+        <!-- <div class="dropdown-content">
+       <a href="www.hdu.edu.cn">map</a><br>
+       <a href="www.hdu.edu.cn">map2</a>
+
+
+           <ul>
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+        </ul>
+       
+        </div>
+         -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
