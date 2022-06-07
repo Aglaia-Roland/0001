@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            span{
+                color: red;
+        
+            }
+            div[target]{
+                border: 5px solid rgb(0, 0, 0);
+                background-color: rgb(192, 237, 255);
+                width: 300px;
+                height: 50px;
+                display: block;
+                margin: auto;            
+                text-align: center;      
+                padding-top:6px;
+        
+        
+            }
+            button{
+                display: block;      
+                margin: auto; 
+        
+            }
+        </style>
+
+    </head>
+    <body>
+    <div target="tag">
+
+        <button id="time">CLICK ME !</button>
+        <div id="demo"></div>
+
+        <script>
+            document.getElementById('time').addEventListener('click',start);
+            
+            var click = 1;
+            var i = 0;
+            var time = '';
+
+            var s = 100;
+
+            function start(){
+                click = click%2 ;  console.log(click);
+                if (click == 1){time = setInterval(adds, 1000);
+                }else{
+                    pause();}
+                click++;
+                function adds(){
+                     var j = s--;
+                     document.getElementById('demo').innerHTML = '时间还剩:' + '<span>' + j + '</span>' +'秒';
+                }
+                function pause(){
+                    clearInterval(time);}
+            }
+        </script>
+
+    </div>
+
+
+
+    </body>
+</html>
+
